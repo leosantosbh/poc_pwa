@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.default-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.select-method {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+a:-webkit-any-link {
+  color: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.select-method .select-method-on {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #538b58;
+  border-radius: 10px;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.select-method .select-method-on:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.select-method .select-method-off {
+  cursor: pointer;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #c53b3b;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.select-method .select-method-off:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.listTaks {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  border: none;
+  padding: 10px;
+  margin-top: 3px;
+  background-color: '#f9f9f9';
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.task:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.nameTask {
+  font-weight: 500;
+}
+
+.statusTask {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.form-note {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.titleNote {
+  margin: 10px 0px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.buttonsAdd {
+  display: flex;
+  max-width: 600px;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.buttonsAdd button {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.buttonsAdd button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.notes .note {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 90%;
+}
+
+.desc-note {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.images {
+  display: flex;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
+}
+
+.camera-wrapper div {
+  height: 100%;
+}

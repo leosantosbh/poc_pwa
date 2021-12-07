@@ -1,0 +1,19 @@
+# Ignore dependencies
+node_modules/
+ 
+# Ignore bundle files
+build/
+dist/
+lib/
+staging/
+production/
+.cache/
+.rpt2_cache/
+ 
+# Ignore others
+yarn-error.log
+.DS_Store
+debug.log
+.env
+yarn.lock
+backend/salesPortal/yarn.lock
