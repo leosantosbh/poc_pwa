@@ -1,19 +1,17 @@
 import {
-  BrowserRouter,
-  Routes,
-  Route
+  BrowserRouter, Route, Switch
 } from "react-router-dom";
 import App from './App';
-import Online from './online';
 import Offline from './offline';
+import Online from './online';
 // import your route components too
 
 export const AppRouter = () => (
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="online" element={<Online />} />
-      <Route path="offline" element={<Offline />} />
-    </Routes>
+    <Switch>
+      <Route path="/" exact component={App} />
+      <Route path="/online" exact component={Online} />
+      <Route path="/offline" exact component={Offline} />
+    </Switch>
   </BrowserRouter>
 )
