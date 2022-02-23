@@ -181,3 +181,17 @@ a:-webkit-any-link {
 .camera-wrapper div {
   height: 100%;
 }
+
+.install-button {
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  width: 100%;
+  border: none;
+  height: 52px;
+  background-color: #0075be;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
